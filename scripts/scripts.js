@@ -3,7 +3,13 @@ const connectr = {};
 
 // Organizing init function to pass to document ready
 connectr.init = () => {
-  console.log("UsamaDude");
+  connectr.slideshow();
+};
+
+connectr.slideshow = () => {
+  $(".main-carousel").flickity({
+    groupCells: true,
+  });
 };
 
 // Document ready function

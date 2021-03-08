@@ -222,6 +222,8 @@ html {
   overflow: hidden;
 }
 
+/* Global Styles */
+
 html {
   font-size: 62.5%;
   max-width: 100%;
@@ -246,6 +248,7 @@ ul {
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 img {
@@ -254,7 +257,84 @@ img {
 }
 
 .wrapper {
-  max-width: 1280px;
+  max-width: 1980px;
   width: 90%;
   margin: 0 auto;
+}
+
+body {
+  /* font-family: 'Amiri', serif; */
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+/* Nav Styles */
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.navContainer h1 {
+  font-size: 3rem;
+}
+
+.linksContainer,
+.blocksContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.linksContainer a {
+  padding: 10px;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+
+.blocks {
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  background-color: lightgray;
+}
+
+/* Header Styles */
+
+.landPageHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  background-color: lightgray;
+}
+
+.landPageHeader p {
+  text-align: center;
+}
+
+.uniSearchContainer {
+  margin: 25px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.uniSearchContainer input {
+  margin: 0 2px;
+  padding: 10px 350px;
+}
+
+.uniSubmit {
+  padding: 20px 40px;
+  background-color: gray;
+}
+
+.carousel-cell {
+  width: 200px;
+  height: 100px;
+  color: white;
+  background-color: black;
 }
