@@ -3,6 +3,7 @@ const connectr = {};
 
 // Organizing init function to pass to document ready
 connectr.init = () => {
+  AOS.init();
   connectr.slideshow();
   connectr.toggleTour(".imagesButton", ".imagesContainer");
   connectr.toggleTour(".virtualButton", ".virtualContainer");

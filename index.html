@@ -15,72 +15,81 @@
       href="https://fonts.googleapis.com/css2?family=Amiri&family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles/aos.css" />
     <link rel="stylesheet" href="./assets/styles/flickity.css" />
     <link rel="stylesheet" href="./assets/styles/styles.css" />
     <title>ConnectR</title>
   </head>
   <body>
-    <nav class="navContainer wrapper">
-      <h1>ConnectR</h1>
-      <ul class="linksContainer">
-        <li><a href="index.html">about us</a></li>
-        <li><a href="explore.html">explore</a></li>
-        <li><a href="">sign up / sign in</a></li>
-      </ul>
-      <div class="blocksContainer">
-        <div class="blocks"></div>
-        <div class="blocks"></div>
-        <div class="blocks"></div>
-        <div class="blocks"></div>
-      </div>
-    </nav>
-
     <header class="landPageHeader">
-      <div class="headerP">
+      <nav class="navContainer wrapper">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          class="logoContainer"
+        >
+          <img
+            class="logo"
+            src="./assets/images/logo.png"
+            alt="connectr logo"
+          />
+          <h1>connectr</h1>
+        </div>
+        <ul
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          class="linksContainer"
+        >
+          <li><a href="index.html">about us</a></li>
+          <li><a href="explore.html">explore</a></li>
+          <li><a href="community.html">community</a></li>
+          <li><a class="signUp" href="">sign up / sign in</a></li>
+        </ul>
+      </nav>
+      <div class="headerInfoContainer wrapper">
+        <h2>Get the inside scoop on your future university</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-          quasi tenetur debitis rerum, ad in dolorem incidunt beatae error
-          possimus tempora, deserunt dicta numquam quae fugiat? Distinctio
-          obcaecati praesentium quos!
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque amet
+          dicta, unde consequuntur facere fugit culpa? Ipsum necessitatibus,
+          numquam rem maxime tenetur nemo nisi sunt velit obcaecati, quisquam
+          esse aperiam.
         </p>
-      </div>
-      <div class="uniSearchContainer">
-        <label for="uniSearch"></label>
-        <input
-          type="textarea"
-          name="uniSearch"
-          id="uniSearch"
-          placeholder="Search colleges, universities, countries, states, or cities..."
-        />
-        <button class="uniSubmit">Submit</button>
+        <div class="uniButtonContainer">
+          <a class="uniLink" href="explore.html">Find your university</a>
+        </div>
       </div>
     </header>
 
-    <section class="carousel">
-      <h2>Slideshow</h2>
-      <div class="sectionP1">
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
-          consectetur ab debitis iste adipisci minima.
-        </p>
-      </div>
+    <section class="siteLinksContainer">
+      <ul>
+        <li><a href="">university highlights</a></li>
+        <li><a href="">virtual tours</a></li>
+        <li><a href="">student reviews</a></li>
+        <li><a href="">networking</a></li>
+        <li><a href="">gamification</a></li>
+      </ul>
     </section>
 
     <section>
       <div class="photosContainer">
         <div class="firstContainer">
-          <div class="info1 x">
+          <div class="info1 inPhoAll">
             <h3>Info1</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
               vel!
             </p>
           </div>
-          <div class="photo1 x"></div>
+          <div class="photo1 inPhoAll"></div>
         </div>
         <div class="secondContainer">
-          <div class="photo2 x"></div>
-          <div class="info2 x">
+          <div class="photo2 inPhoAll"></div>
+          <div class="info2 inPhoAll">
             <h3>Info2</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
@@ -89,19 +98,70 @@
           </div>
         </div>
         <div class="thirdContainer">
-          <div class="info3 x">
+          <div class="info3 inPhoAll">
             <h3>Info3</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
               vel!
             </p>
           </div>
-          <div class="photo3 x"></div>
+          <div class="photo3 inPhoAll"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="questionContainer">
+      <h3>Question about something important?</h3>
+      <h3>Catchy tagline.</h3>
+      <a class="uniLink" href="explore.html">Find your university</a>
+      <img class="logo1" src="./assets/images/logo.png" alt="connectr logo" />
+      <img class="logo2" src="./assets/images/logo.png" alt="connectr logo" />
+      <img class="logo3" src="./assets/images/logo.png" alt="connectr logo" />
+      <img class="logo4" src="./assets/images/logo.png" alt="connectr logo" />
+      <img class="logo5" src="./assets/images/logo.png" alt="connectr logo" />
+      <img class="logo6" src="./assets/images/logo.png" alt="connectr logo" />
+      <img class="logo7" src="./assets/images/logo.png" alt="connectr logo" />
+      <img class="logo8" src="./assets/images/logo.png" alt="connectr logo" />
+    </section>
+
+    <section class="studentVideoContainer">
+      <div class="studentVideoTitleContainer">
+        <h3>Hear from real students</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+          aperiam itaque earum modi. Expedita, vel!
+        </p>
+      </div>
+      <div class="videosContainer">
+        <div>
+          <iframe
+            src="https://www.youtube.com/embed/MLSxonmhh-U"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div>
+          <iframe
+            src="https://www.youtube.com/embed/97ocZzUtrF0"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div>
+          <iframe
+            src="https://www.youtube.com/embed/KQCluAN7DDk"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
     </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./scripts/aos.js"></script>
     <script src="./scripts/flickity.pkgd.js"></script>
     <script src="./scripts/scripts.js"></script>
   </body>
