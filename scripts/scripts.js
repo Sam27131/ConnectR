@@ -4,18 +4,18 @@ const connectr = {};
 // Organizing init function to pass to document ready
 connectr.init = () => {
   AOS.init();
-  connectr.slideshow();
+  // connectr.slideshow();
   connectr.toggleTour(".imagesButton", ".imagesContainer");
   connectr.toggleTour(".virtualButton", ".virtualContainer");
   connectr.closeWindow(".closeImages", ".imagesContainer");
   connectr.closeWindow(".closeVirtual", ".virtualContainer");
 };
 
-connectr.slideshow = () => {
-  $(".main-carousel").flickity({
-    groupCells: true,
-  });
-};
+// connectr.slideshow = () => {
+//   $(".main-carousel").flickity({
+//     groupCells: true,
+//   });
+// };
 
 connectr.toggleTour = (selector, container) => {
   $(selector).click(function () {
@@ -32,4 +32,5 @@ connectr.closeWindow = (selector, container) => {
 // Document ready function
 $(function () {
   connectr.init();
+  console.log("Usama");
 });
