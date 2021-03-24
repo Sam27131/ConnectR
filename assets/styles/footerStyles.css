@@ -1,0 +1,66 @@
+.footerContainer {
+  position: relative;
+  height: 75vh;
+  display: flex;
+  padding: 50px 0;
+}
+
+.footerLogoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25%;
+}
+
+.logo {
+  width: 40px;
+  height: 75px;
+}
+
+.footerSignUp {
+  text-transform: capitalize;
+  color: #ee1d52;
+  border: 2px solid #ee1d52;
+  width: fit-content;
+  padding: 5px;
+}
+
+.footerLinksContainer {
+  width: 75%;
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: center;
+}
+
+.productContainer,
+.companyContainer,
+.socialContainer,
+.contactUsContainer {
+  margin: 0 25px;
+}
+
+.footerLinks h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 0 0 10px 10px;
+}
+
+.footerLinks a {
+  color: black;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+.footerLinks a:hover {
+  color: #ee1d52;
+  transition: all 0.2s ease-in-out;
+}
+
+.trademarkContainer {
+  position: absolute;
+  bottom: 48px;
+  right: 50%;
+}

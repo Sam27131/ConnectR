@@ -21,13 +21,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/styles/aos.css" />
-    <link rel="stylesheet" href="./assets/styles/communityStyles.css" />
+    <link rel="stylesheet" href="./assets/styles/navStyles.css" />
+    <link rel="stylesheet" href="./assets/styles/browseStyles.css" />
     <link rel="stylesheet" href="./assets/styles/footerStyles.css" />
     <title>ConnectR</title>
   </head>
   <body>
-    <div class="profilePage">
-      <div class="userProfileLogoContainer">
+    <div class="browsePage">
+      <div class="mainLogoContainer">
         <a href="index.html"
           ><img
             class="logo"
@@ -38,10 +39,8 @@
         /></a>
         <div class="logoIcons">
           <img src="./assets/images/homeIcon.jpg" alt="" />
-          <a href="browse.html"
-            ><img src="./assets/images/gradCap.JPG" alt=""
-          /></a>
           <img src="./assets/images/people.jpg" alt="" />
+          <img src="./assets/images/homeIcon.jpg" alt="" />
         </div>
       </div>
       <div class="content">
@@ -53,7 +52,7 @@
                 type="text"
                 name="searchSite"
                 id="search"
-                placeholder="&#128269; Search Connectr..."
+                placeholder="&#128269; Search ConnectR..."
               />
             </div>
             <div class="icons">
@@ -64,25 +63,105 @@
           </div>
         </nav>
 
-        <header class="communityContainer">
-          <div class="community">
-            <h1>Welcome to the Connectr Community 🎉</h1>
-            <p>
-              Enter your email below, and we’ll send you a link to join our
-              Slack community.
-            </p>
-            <label for="email"></label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email Address"
-            />
-            <div class="slackLink">
-              <a href="">Send link to Slack Group</a>
+        <section class="worldCollegesContainer">
+          <div class="wrapper">
+            <h1>browse colleges & universities</h1>
+            <h2>Popular Around the World</h2>
+            <div class="worldColleges">
+              <div>
+                <img src="./assets/images/columbia.jpg" alt="" />
+                <h3>Columbia University</h3>
+                <p>New York, NY</p>
+              </div>
+              <div class="oxford">
+                <img src="./assets/images/oxford.jpg" alt="" />
+                <h3>University of Oxford</h3>
+                <p>Oxford, UK</p>
+              </div>
+              <div class="melbourne">
+                <img src="./assets/images/melbourne.jpg" alt="" />
+                <h3>University of Melbourne</h3>
+                <p>Melbourne, AU</p>
+              </div>
+              <div>
+                <img src="./assets/images/yonsei.jpg" alt="" />
+                <h3>Yonsei University</h3>
+                <p>Seoul, KR</p>
+              </div>
+              <div class="viewAll">
+                <a href="">View all ></a>
+              </div>
             </div>
           </div>
-        </header>
+        </section>
+
+        <section class="nearbyCollegesParentContainer wrapper">
+          <h2>colleges nearby</h2>
+          <div class="nearbyCollegesContainer">
+            <div class="nearbyColleges">
+              <div class="collegeInfo">
+                <img src="./assets/images/laurier.jpg" alt="" />
+                <div class="imageInfo">
+                  <h3>Wilfrid Laurier University</h3>
+                  <p>45 minute drive</p>
+                </div>
+              </div>
+              <div class="collegeInfo">
+                <img src="./assets/images/conestoga.jpg" alt="" />
+                <div class="imageInfo">
+                  <h3>Conestoga College</h3>
+                  <p>20 minute drive</p>
+                </div>
+              </div>
+              <div class="collegeInfo">
+                <img src="./assets/images/york.jpg" alt="" />
+                <div class="imageInfo">
+                  <h3>York University</h3>
+                  <p>1 hour drive</p>
+                </div>
+              </div>
+              <div class="collegeInfo">
+                <a href="explore.html"
+                  ><img src="./assets/images/waterloo.jpg" alt=""
+                /></a>
+
+                <div class="imageInfo">
+                  <h3>University of Waterloo</h3>
+                  <p>30 minute drive</p>
+                </div>
+              </div>
+              <div class="collegeInfo">
+                <img src="./assets/images/toronto.jpg" alt="" />
+                <div class="imageInfo">
+                  <h3>University of Toronto</h3>
+                  <p>1.5 hour drive</p>
+                </div>
+              </div>
+              <div class="collegeInfo">
+                <img src="./assets/images/ocad.jpg" alt="" />
+                <div class="imageInfo">
+                  <h3>OCAD University</h3>
+                  <p>1.5 hour drive</p>
+                </div>
+              </div>
+            </div>
+            <div class="viewAll">
+              <a href="">View all ></a>
+            </div>
+          </div>
+        </section>
+
+        <section class="locationBrowseContainer">
+          <h2 class="wrapper">Browse by Location</h2>
+          <div class="locationBrowse wrapper">
+            <div class="continent">africa &#8595;</div>
+            <div class="continent">asia &#8595;</div>
+            <div class="continent">oceania &#8595;</div>
+            <div class="continent">americas &#8595;</div>
+            <div class="continent">europe &#8595;</div>
+            <div class="continent"></div>
+          </div>
+        </section>
 
         <footer class="footerContainer wrapper">
           <div class="footerLogoContainer">

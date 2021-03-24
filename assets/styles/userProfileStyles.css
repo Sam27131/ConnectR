@@ -276,93 +276,34 @@ body {
 
 /* userProfile.html Styles */
 
-/* Nav Styles */
+/* User Profile Container Styles */
 
-.navContainer {
-  padding: 15px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0 4px 2px -2px gray;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#search {
-  padding: 10px 450px 10px 10px;
-  background-color: lightgray;
-}
-
-.content {
-  width: 100%;
-  border-bottom: 2px solid black;
-}
-
-.userProfileLogoContainer {
-  float: left;
-  display: flex;
-  flex-direction: column;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
-  padding: 0 20px;
-}
-
-.logo {
-  width: 25px;
-  height: 50px;
-  margin: 20px 20px 150px 20px;
-}
-
-.logo:hover {
-  transform: scale(1.1);
-  transition: all 0.2s ease-in-out;
-}
-
-.logoIcons {
-  display: flex;
-  flex-direction: column;
+.userProfileContainer {
   border-bottom: 1px solid black;
 }
 
-.icons {
-  display: flex;
+.userProfile h1 {
+  font-weight: 600;
+  padding: 100px 0;
 }
 
-.icons img,
-.logoIcons img {
-  width: 35px;
-  height: 35px;
-  margin: 20px;
+.userProgressContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  padding: 0 0 250px 0;
 }
 
-/* Community Styles */
-
-.communityContainer {
-  border-bottom: 1px solid black;
+.recentlyViewed,
+.profileProgress {
+  height: 500px;
 }
 
-.community {
-  padding: 100px 200px 500px 200px;
-  text-align: center;
+.recentlyViewed {
+  grid-column: 1 / 3;
+  background-color: #ffe5ec;
 }
 
-.community p {
-  padding: 50px 0;
-}
-
-#email {
-  padding: 20px 400px 20px 20px;
-}
-
-.slackLink a {
-  margin: 20px 0;
-  padding: 20px 50px;
-  border: none;
+.profileProgress {
   background-color: #ee1d52;
-  color: white;
-  text-transform: capitalize;
 }

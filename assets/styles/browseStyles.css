@@ -268,101 +268,115 @@ body {
   line-height: 1.5;
 }
 
-.profilePage {
+.browsePage {
   display: flex;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 
-/* userProfile.html Styles */
+/* browse.html Styles */
 
-/* Nav Styles */
+/* Browse Colleges Content Styles */
 
-.navContainer {
-  padding: 15px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0 4px 2px -2px gray;
+.worldCollegesContainer h1 {
+  font-size: 4rem;
+  padding: 50px 0;
+  text-transform: capitalize;
+  font-weight: 600;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.nearbyCollegesParentContainer h2,
+.worldCollegesContainer h2 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  font-weight: 600;
 }
 
-#search {
-  padding: 10px 450px 10px 10px;
-  background-color: lightgray;
-}
-
-.content {
-  width: 100%;
-  border-bottom: 2px solid black;
-}
-
-.userProfileLogoContainer {
-  float: left;
-  display: flex;
-  flex-direction: column;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
-  padding: 0 20px;
-}
-
-.logo {
-  width: 25px;
-  height: 50px;
-  margin: 20px 20px 150px 20px;
-}
-
-.logo:hover {
-  transform: scale(1.1);
-  transition: all 0.2s ease-in-out;
-}
-
-.logoIcons {
-  display: flex;
-  flex-direction: column;
-  border-bottom: 1px solid black;
-}
-
-.icons {
-  display: flex;
-}
-
-.icons img,
-.logoIcons img {
-  width: 35px;
-  height: 35px;
-  margin: 20px;
-}
-
-/* Community Styles */
-
-.communityContainer {
-  border-bottom: 1px solid black;
-}
-
-.community {
-  padding: 100px 200px 500px 200px;
-  text-align: center;
-}
-
-.community p {
+.locationBrowseContainer h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
   padding: 50px 0;
 }
 
-#email {
-  padding: 20px 400px 20px 20px;
+.worldCollegesContainer img:hover,
+.collegeInfo img:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
 }
 
-.slackLink a {
-  margin: 20px 0;
-  padding: 20px 50px;
-  border: none;
-  background-color: #ee1d52;
-  color: white;
+.worldColleges {
+  display: flex;
+  padding: 50px 0;
+}
+
+.worldColleges div {
+  width: 100%;
+}
+
+.oxford {
+  margin-left: 20px;
+}
+
+.melbourne {
+  margin: 0 20px;
+}
+
+.viewAll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Nearby Colleges Styles */
+
+.nearbyCollegesContainer {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nearbyCollegesContainer .viewAll {
+  margin-right: 80px;
+}
+
+.nearbyColleges {
+  display: grid;
+  grid-column-gap: 50px;
+  grid-row-gap: 25px;
+  grid-template-columns: auto auto auto;
+}
+
+.collegeInfo {
+  display: flex;
+}
+
+.nearbyColleges img {
+  width: 80px;
+  height: 80px;
+}
+
+.imageInfo {
+  padding: 20px;
+}
+
+/* Browse by Continent Styles */
+
+.locationBrowseContainer {
+  padding-bottom: 50px;
+  border-bottom: 1px solid black;
+}
+
+.locationBrowse {
+  display: grid;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  grid-template-columns: auto auto auto;
+}
+
+.continent {
+  font-size: 2rem;
   text-transform: capitalize;
+  font-weight: 600;
 }

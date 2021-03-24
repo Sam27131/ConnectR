@@ -21,13 +21,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/styles/aos.css" />
-    <link rel="stylesheet" href="./assets/styles/communityStyles.css" />
+    <link rel="stylesheet" href="./assets/styles/navStyles.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/styles/userProfileCreationStyles.css"
+    />
     <link rel="stylesheet" href="./assets/styles/footerStyles.css" />
     <title>ConnectR</title>
   </head>
   <body>
-    <div class="profilePage">
-      <div class="userProfileLogoContainer">
+    <div class="profileCreationPage">
+      <div class="mainLogoContainer">
         <a href="index.html"
           ><img
             class="logo"
@@ -38,10 +42,8 @@
         /></a>
         <div class="logoIcons">
           <img src="./assets/images/homeIcon.jpg" alt="" />
-          <a href="browse.html"
-            ><img src="./assets/images/gradCap.JPG" alt=""
-          /></a>
           <img src="./assets/images/people.jpg" alt="" />
+          <img src="./assets/images/homeIcon.jpg" alt="" />
         </div>
       </div>
       <div class="content">
@@ -53,7 +55,7 @@
                 type="text"
                 name="searchSite"
                 id="search"
-                placeholder="&#128269; Search Connectr..."
+                placeholder="&#128269; Search ConnectR..."
               />
             </div>
             <div class="icons">
@@ -64,24 +66,74 @@
           </div>
         </nav>
 
-        <header class="communityContainer">
-          <div class="community">
-            <h1>Welcome to the Connectr Community 🎉</h1>
-            <p>
-              Enter your email below, and we’ll send you a link to join our
-              Slack community.
-            </p>
-            <label for="email"></label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email Address"
-            />
-            <div class="slackLink">
-              <a href="">Send link to Slack Group</a>
+        <header class="userProfileHeaderContainer">
+          <div>
+            <h1 data-aos="fade-right" data-aos-duration="1500">Profile</h1>
+            <p>Fill out your profile so people can know more about you.</p>
+          </div>
+          <div class="avatarContainer">
+            <div>
+              <p>Avatar</p>
+              <img
+                src="./assets/images/profilePic.jpg"
+                alt=""
+                data-aos="fade-right"
+                data-aos-duration="1500"
+              />
+            </div>
+            <div>
+              <button data-aos="fade-left" data-aos-duration="1500">
+                Choose image
+              </button>
             </div>
           </div>
+
+          <form action="userProfile.html">
+            <div class="name">
+              <div class="fnameContainer">
+                <label for="fname">First name</label>
+                <input type="text" id="fname" name="fname" required />
+              </div>
+              <div class="lnameContainer">
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" name="lname" />
+              </div>
+            </div>
+            <div class="currentSchool">
+              <label for="school">Current School</label>
+              <input type="text" id="school" name="school" />
+            </div>
+            <div class="bio">
+              <label for="bio">Bio</label>
+              <input type="textarea" id="bio" name="bio" rows="10" cols="50" />
+            </div>
+            <div class="email">
+              <label for="email">Email Address</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="changePsw">
+              <button>change password</button>
+            </div>
+
+            <div class="socialProfileContainer">
+              <h2>social profiles</h2>
+              <div class="linkedin">
+                <label for="linkedin">LinkedIn</label>
+                <input type="text" name="linkedin" id="linkedin" />
+              </div>
+              <div class="twitter">
+                <label for="twitter">Twitter</label>
+                <input type="text" name="twitter" id="twitter" />
+              </div>
+              <div class="instagram">
+                <label for="instagram">Instagram</label>
+                <input type="text" name="instagram" id="instagram" />
+              </div>
+              <div class="saveChanges">
+                <button type="submit">save</button>
+              </div>
+            </div>
+          </form>
         </header>
 
         <footer class="footerContainer wrapper">

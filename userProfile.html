@@ -21,13 +21,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/styles/aos.css" />
-    <link rel="stylesheet" href="./assets/styles/communityStyles.css" />
+    <link rel="stylesheet" href="./assets/styles/navStyles.css" />
+    <link rel="stylesheet" href="./assets/styles/userProfileStyles.css" />
     <link rel="stylesheet" href="./assets/styles/footerStyles.css" />
-    <title>ConnectR</title>
+    <title>Connectr</title>
   </head>
   <body>
     <div class="profilePage">
-      <div class="userProfileLogoContainer">
+      <div class="mainLogoContainer">
         <a href="index.html"
           ><img
             class="logo"
@@ -41,7 +42,9 @@
           <a href="browse.html"
             ><img src="./assets/images/gradCap.JPG" alt=""
           /></a>
-          <img src="./assets/images/people.jpg" alt="" />
+          <a href="community.html"
+            ><img src="./assets/images/people.jpg" alt=""
+          /></a>
         </div>
       </div>
       <div class="content">
@@ -64,22 +67,12 @@
           </div>
         </nav>
 
-        <header class="communityContainer">
-          <div class="community">
-            <h1>Welcome to the Connectr Community 🎉</h1>
-            <p>
-              Enter your email below, and we’ll send you a link to join our
-              Slack community.
-            </p>
-            <label for="email"></label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email Address"
-            />
-            <div class="slackLink">
-              <a href="">Send link to Slack Group</a>
+        <header class="userProfileContainer">
+          <div class="userProfile wrapper">
+            <h1>Hey Naomi, welcome to Connectr 👋</h1>
+            <div class="userProgressContainer">
+              <div class="recentlyViewed"></div>
+              <div class="profileProgress"></div>
             </div>
           </div>
         </header>

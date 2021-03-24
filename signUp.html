@@ -26,11 +26,11 @@
   </head>
   <body>
     <nav class="navContainer wrapper">
-      <div data-aos="fade-right" data-aos-duration="1000" class="logoContainer">
+      <div class="logoContainer">
         <img class="logo" src="./assets/images/logo2.jpg" alt="connectr logo" />
         <h1>connectr</h1>
       </div>
-      <ul data-aos="fade-left" data-aos-duration="1000" class="linksContainer">
+      <ul class="linksContainer">
         <li><a href="index.html">about us</a></li>
         <li><a href="explore.html">explore</a></li>
         <li><a href="community.html">community</a></li>
@@ -44,7 +44,11 @@
         <p>Sign in to access your account</p>
         <p>
           Not registered?
-          <span><a class="createAccount" href="">Create an account</a></span>
+          <span
+            ><a class="createAccount" href="userProfileCreation.html"
+              >Create an account</a
+            ></span
+          >
         </p>
       </div>
 
@@ -53,6 +57,7 @@
           <label for="uname"><b>Username</b></label>
           <input
             type="text"
+            id="uname"
             placeholder="Enter Username"
             name="uname"
             required
@@ -68,13 +73,13 @@
           />
         </div>
         <a class="forgotPsw" href="">Forgot your password?</a>
-        <a class="formSubmit" href="explore.html">Continue</a>
+        <a class="formSubmit" href="userProfile.html">Continue</a>
       </form>
+      <div class="result"></div>
     </header>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./scripts/aos.js"></script>
-    <script src="./scripts/flickity.pkgd.js"></script>
     <script src="./scripts/scripts.js"></script>
   </body>
 </html>

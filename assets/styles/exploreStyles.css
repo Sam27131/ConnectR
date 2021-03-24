@@ -268,68 +268,43 @@ body {
   line-height: 1.5;
 }
 
+.explorePage {
+  display: flex;
+}
+
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 
 /* explore.html Styles */
 
-/* Nav Styles */
+/* Header Styles */
 
-.navContainer {
-  padding: 15px 0;
+/* .exploreHeader {
+  clear: both;
+} */
+
+.exploreHeader h1 {
+  padding: 50px 0;
 }
 
-.logoContainer {
-  float: left;
+.headerPhotosContainer {
+  position: relative;
+}
+
+.headerPhotos {
   display: flex;
+  padding-top: 50px;
 }
 
-.navContainer .logo {
-  width: 25px;
-  height: 50px;
-  margin-right: 10px;
-}
-
-.navContainer h1 {
-  font-size: 3rem;
-  text-transform: uppercase;
-  color: black;
-  font-weight: bold;
-}
-
-.linksContainer {
-  float: right;
-  display: flex;
-}
-
-.linksContainer a,
-.uniLink {
-  padding: 10px;
-  font-size: 2rem;
-  text-transform: capitalize;
-  color: black;
-}
-
-.linksContainer a:hover {
-  color: blue;
-  transition: all 0.3s ease-in-out;
-}
-
-.signUp,
-.uniLink {
-  padding: 10px;
-  border: 2px solid black;
-}
-
-.signUp:hover,
-.uniLink:hover {
-  border: 2px solid blue;
-  transition: all 0.3s ease-in-out;
+.headerPhotos img {
+  margin: 0 5px;
 }
 
 /* Map Styles */
 
 .uniPhotosContainer {
-  clear: both;
+  padding: 50px 0;
+  background-color: white;
+  width: 70%;
 }
 
 .imagesContainer,
@@ -344,12 +319,21 @@ body {
 }
 
 .images {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 10px;
 }
 
-.images img {
+/* .images img {
   height: 300px;
+} */
+
+.mySlides {
+  display: none;
+  height: 400px;
+}
+
+.w3-center {
+  margin: 15px 0;
 }
 
 .viewContainer {
@@ -374,11 +358,143 @@ iframe {
 .buttonsContainer {
   display: flex;
   justify-content: center;
-  padding: 25px;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  position: absolute;
+  left: 40%;
+  top: 95%;
+}
+
+.buttonsContainer button:hover {
+  color: #ee1d52;
+  transition: all 0.2s linear;
 }
 
 .imagesButton,
-.virtualButton {
+.virtualButton,
+.videosButton {
   padding: 10px;
+  background-color: white;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: 2px solid black;
+}
+
+.videosButton {
+  border-right: none;
+}
+
+.closeImages,
+.closeVirtual {
+  background-color: white;
+  border: none;
+  font-size: 4rem;
+}
+
+.closeImages:hover,
+.closeVirtual:hover {
+  background-color: lightgray;
+  border-radius: 20%;
+  transition: all 0.2s linear;
+}
+
+/* .overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+} */
+
+/* Explore Info Styles */
+
+.exploreInfoContainer {
+  margin-top: 50px;
+  display: flex;
+  border-bottom: 1px solid black;
+}
+
+.helpfulInfoContainer {
+  width: 60%;
+}
+
+.helpfulInfoContainer h2 {
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.overview,
+.location,
+.admissions,
+.cost,
+.academics,
+.universityLife {
+  padding: 50px 0;
+  border-bottom: 1px solid black;
+}
+
+.universityLife {
+  border-bottom: none;
+}
+
+.location p {
+  margin-bottom: 25px;
+}
+
+.membersContainer {
+  width: 40%;
+  margin: 50px;
+  height: fit-content;
+  background-color: lightgray;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px;
+}
+
+.title h3 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.title a {
+  font-size: 2rem;
+  color: #000;
+}
+
+.title a:hover {
+  color: dodgerblue;
+  transition: all 0.2s linear;
+}
+
+.profilePics {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profilePics div {
+  font-size: 4rem;
+  background-color: lightskyblue;
+  border-radius: 50%;
   margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc((100% / 3) - 20px);
+  height: 150px;
 }

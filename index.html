@@ -22,16 +22,13 @@
     />
     <link rel="stylesheet" href="./assets/styles/aos.css" />
     <link rel="stylesheet" href="./assets/styles/indexStyles.css" />
-    <title>ConnectR</title>
+    <link rel="stylesheet" href="./assets/styles/footerStyles.css" />
+    <title>Connectr</title>
   </head>
   <body>
     <header class="landPageHeader">
       <nav class="navContainer wrapper">
-        <div
-          data-aos="fade-right"
-          data-aos-duration="1000"
-          class="logoContainer"
-        >
+        <div class="logoContainer">
           <img
             class="logo"
             src="./assets/images/logo.png"
@@ -39,72 +36,115 @@
           />
           <h1>connectr</h1>
         </div>
-        <ul
-          data-aos="fade-left"
-          data-aos-duration="1000"
-          class="linksContainer"
-        >
+        <ul class="linksContainer">
           <li><a href="index.html">about us</a></li>
           <li><a href="explore.html">explore</a></li>
-          <li><a href="community.html">community</a></li>
+          <!-- <li><a href="community.html">community</a></li>
+          <li><a href="userProfile.html">my profile</a></li> -->
           <li><a class="signUp" href="signUp.html">sign up / sign in</a></li>
         </ul>
       </nav>
-      <div class="headerInfoContainer wrapper">
-        <h2>Get the inside scoop on your future university</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque amet
-          dicta, unde consequuntur facere fugit culpa? Ipsum necessitatibus,
-          numquam rem maxime tenetur nemo nisi sunt velit obcaecati, quisquam
-          esse aperiam.
-        </p>
-        <div class="uniButtonContainer">
-          <a class="uniLink" href="explore.html">Find your university</a>
+      <div class="wrapper">
+        <div class="headerInfoContainer">
+          <h2 data-aos="fade-right" data-aos-duration="1000">
+            Get the inside scoop on your future university
+          </h2>
+          <p data-aos="fade-right" data-aos-duration="2000">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque amet
+            dicta, unde consequuntur facere fugit culpa? Ipsum necessitatibus,
+            numquam rem maxime tenetur nemo nisi sunt velit obcaecati, quisquam
+            esse aperiam.
+          </p>
+          <div class="uniButtonContainer">
+            <a class="uniLink" href="signUp.html">Find your university</a>
+          </div>
         </div>
       </div>
     </header>
 
     <section class="siteLinksContainer">
       <ul>
-        <li><a href="">university highlights</a></li>
-        <li><a href="">virtual tours</a></li>
-        <li><a href="">student reviews</a></li>
-        <li><a href="">networking</a></li>
-        <li><a href="">gamification</a></li>
+        <div>
+          <img src="./assets/images/uniHighlights.jpg" alt="" />
+          <li><a href="">university highlights</a></li>
+        </div>
+        <div>
+          <img src="./assets/images/virtualTours.jpg" alt="" />
+          <li><a href="">virtual tours</a></li>
+        </div>
+        <div>
+          <img src="./assets/images/studentReviews.jpg" alt="" />
+          <li><a href="">student reviews</a></li>
+        </div>
+        <div>
+          <img src="./assets/images/networking.jpg" alt="" />
+          <li><a href="">networking</a></li>
+        </div>
+        <div>
+          <img src="./assets/images/gamification.jpg" alt="" />
+          <li><a href="">gamification</a></li>
+        </div>
       </ul>
     </section>
 
     <section>
-      <div class="photosContainer">
+      <div class="photosContainer wrapper">
         <div class="firstContainer">
           <div class="info1 inPhoAll">
-            <h3>Info1</h3>
+            <h3>Connect with potential colleges and universities</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-              vel!
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor. Lorem ipsum dolor sit amet, consectetur. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor. Lorem ipsum dolor sit amet, consectetur.
             </p>
           </div>
-          <div class="photo1 inPhoAll"></div>
+          <div class="photo1 inPhoAll">
+            <img
+              src="./assets/images/landPage1.jpg"
+              alt=""
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            />
+          </div>
         </div>
         <div class="secondContainer">
-          <div class="photo2 inPhoAll"></div>
+          <div class="photo2 inPhoAll">
+            <img
+              src="./assets/images/landPage2.jpg"
+              alt=""
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            />
+          </div>
           <div class="info2 inPhoAll">
-            <h3>Info2</h3>
+            <h3>Explore campus from the comfort of your home</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-              vel!
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor. Lorem ipsum dolor sit amet, consectetur. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor. Lorem ipsum dolor sit amet, consectetur.
             </p>
           </div>
         </div>
         <div class="thirdContainer">
           <div class="info3 inPhoAll">
-            <h3>Info3</h3>
+            <h3>Learn the lay of the land from current students</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-              vel!
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor. Lorem ipsum dolor sit amet, consectetur. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor. Lorem ipsum dolor sit amet, consectetur.
             </p>
           </div>
-          <div class="photo3 inPhoAll"></div>
+          <div class="photo3 inPhoAll">
+            <img
+              src="./assets/images/landPage3.jpg"
+              alt=""
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            />
+          </div>
         </div>
       </div>
     </section>
@@ -132,50 +172,83 @@
         </p>
       </div>
       <div class="videosContainer">
-        <div>
-          <iframe
-            src="https://www.youtube.com/embed/MLSxonmhh-U"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+        <div class="studentVideo" data-aos="fade-down" data-aos-duration="1000">
+          <img src="./assets/images/matthew.jpg" alt="" />
+          <div class="playButton">
+            <img src="./assets/images/Play button.jpg" alt="" />
+          </div>
         </div>
-        <div>
-          <iframe
-            src="https://www.youtube.com/embed/97ocZzUtrF0"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+        <div class="studentVideo" data-aos="fade-up" data-aos-duration="1000">
+          <img src="./assets/images/zen.jpg" alt="" />
+          <div class="playButton">
+            <img src="./assets/images/Play button.jpg" alt="" />
+          </div>
         </div>
-        <div>
-          <iframe
-            src="https://www.youtube.com/embed/KQCluAN7DDk"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+        <div class="studentVideo" data-aos="fade-down" data-aos-duration="1000">
+          <img src="./assets/images/imani.jpg" alt="" />
+          <div class="playButton">
+            <img src="./assets/images/Play button.jpg" alt="" />
+          </div>
         </div>
       </div>
     </section>
 
-    <footer class="footerContainer">
+    <footer class="footerContainer wrapper">
+      <div class="footerLogoContainer">
+        <div class="logoContainer">
+          <img
+            class="logo"
+            src="./assets/images/logo2.jpg"
+            alt="connectr logo"
+          />
+        </div>
+        <a class="footerSignUp" href="signUp.html">sign up / sign in</a>
+      </div>
       <div class="footerLinksContainer">
         <div class="footerLinks">
           <div class="productContainer">
             <h4>product</h4>
-            <a href="">about</a>
-            <a href="">frequently asked questions (FAQs)</a>
-            <a href="">colleges & universities</a>
-            <a href="">partnerships</a>
+            <ul>
+              <li><a href="">about</a></li>
+              <li>
+                <a href=""
+                  >frequently asked questions <br />
+                  (FAQs)</a
+                >
+              </li>
+              <li><a href="">colleges & universities</a></li>
+              <li><a href="">partnerships</a></li>
+            </ul>
           </div>
-          <div class="companyContainer"></div>
-          <div class="socialContainer"></div>
-          <div class="contactUsContainer"></div>
+          <div class="companyContainer">
+            <h4>company</h4>
+            <ul>
+              <li><a href="">careers</a></li>
+              <li><a href="">privacy policy</a></li>
+              <li><a href="">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div class="socialContainer">
+            <h4>social</h4>
+            <ul>
+              <li><a href="">instagram</a></li>
+              <li><a href="">twitter</a></li>
+              <li><a href="">linkedIn</a></li>
+              <li><a href="">tikTok</a></li>
+            </ul>
+          </div>
+          <div class="contactUsContainer">
+            <h4>contact us</h4>
+            <ul>
+              <li><a href="">email us</a></li>
+              <li><a href="">feedback form</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="footerLogo"></div>
       </div>
-      <div class="trademarkContainer"></div>
+      <div class="trademarkContainer">
+        <p>© 2021 ConnectR</p>
+      </div>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

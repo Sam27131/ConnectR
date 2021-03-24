@@ -20,92 +20,437 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./assets/styles/w3.css" />
     <link rel="stylesheet" href="./assets/styles/aos.css" />
+    <link rel="stylesheet" href="./assets/styles/navStyles.css" />
     <link rel="stylesheet" href="./assets/styles/exploreStyles.css" />
+    <link rel="stylesheet" href="./assets/styles/footerStyles.css" />
     <title>ConnectR</title>
   </head>
   <body>
-    <nav class="navContainer wrapper">
-      <div data-aos="fade-right" data-aos-duration="1000" class="logoContainer">
-        <img class="logo" src="./assets/images/logo2.jpg" alt="connectr logo" />
-        <h1>connectr</h1>
-      </div>
-      <ul data-aos="fade-left" data-aos-duration="1000" class="linksContainer">
-        <li><a href="index.html">about us</a></li>
-        <li><a href="explore.html">explore</a></li>
-        <li><a href="community.html">community</a></li>
-        <li><a class="signUp" href="signUp.html">sign up / sign in</a></li>
-      </ul>
-    </nav>
-
-    <section class="uniPhotosContainer wrapper">
-      <div class="buttonsContainer">
-        <button class="imagesButton">See Images</button>
-        <button class="virtualButton">See Virtual Tour</button>
-      </div>
-      <div class="imagesContainer">
-        <button class="closeImages">Close</button>
-        <div class="images">
-          <div>
-            <img src="./assets/images/1.jpeg" alt="" />
-          </div>
-          <div>
-            <img src="./assets/images/2.jpeg" alt="" />
-          </div>
-          <div>
-            <img src="./assets/images/3.jpeg" alt="" />
-          </div>
+    <div class="explorePage">
+      <div class="mainLogoContainer">
+        <a href="index.html"
+          ><img
+            class="logo"
+            src="./assets/images/logo2.jpg"
+            alt="connectr logo"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+        /></a>
+        <div class="logoIcons">
+          <img src="./assets/images/homeIcon.jpg" alt="" />
+          <img src="./assets/images/people.jpg" alt="" />
+          <img src="./assets/images/homeIcon.jpg" alt="" />
         </div>
       </div>
-      <div class="virtualContainer">
-        <button class="closeVirtual">Close</button>
-        <div class="virtual">
-          <div class="viewContainer">
-            <h2>Basketball</h2>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!4v1614808303511!6m8!1m7!1sCAoSLEFGMVFpcFBEd3M5SVVuWWhpdDJEREpySUtDczhyakpmWXFEYVFZRllBOEJI!2m2!1d43.47227432720506!2d-80.5461348965764!3f151.41371457646085!4f-1.7037129660588874!5f0.7820865974627469"
-              class="gymView"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
+      <div class="content">
+        <nav class="navContainer">
+          <div class="wrapper nav">
+            <div class="searchBar">
+              <label for="search"></label>
+              <input
+                type="text"
+                name="searchSite"
+                id="search"
+                placeholder="&#128269; Search ConnectR..."
+              />
+            </div>
+            <div class="icons">
+              <img src="./assets/images/bell.jpg" alt="" />
+              <img src="./assets/images/bookmark.jpg" alt="" />
+              <img src="./assets/images/profilePic.jpg" alt="" />
+            </div>
           </div>
-
-          <div class="viewContainer">
-            <h2>Math & Computer Lab</h2>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!4v1614991279181!6m8!1m7!1sCAoSLEFGMVFpcFAtS2E4Qjg5QUw0T25NdC15Wk91RFVsVVR1aG41MWEzMENjTVlq!2m2!1d43.4721517!2d-80.5439318!3f215.11301006043172!4f-2.8540554634752624!5f0.7820865974627469"
-              class="mathCompView"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
+        </nav>
+        <header class="exploreHeader wrapper">
+          <h1>University of Waterloo 🏫</h1>
+          <div class="headerPhotosContainer">
+            <div class="headerPhotos">
+              <img
+                src="./assets/images/exploreHeader1.jpg"
+                alt="photo of campus entrance"
+                data-aos="fade-right"
+                data-aos-duration="3000"
+              />
+              <img
+                src="./assets/images/exploreHeader2.jpg"
+                alt="photo of mascot"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              />
+              <img
+                src="./assets/images/exploreHeader3.jpg"
+                alt="students cheering in a stadium"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+              />
+              <img
+                src="./assets/images/exploreHeader4.jpg"
+                alt="photo of alternate campus entrance"
+                data-aos="fade-left"
+                data-aos-duration="3000"
+              />
+            </div>
+            <div class="buttonsContainer">
+              <button
+                class="imagesButton"
+                onclick="document.getElementById('id01').style.display='block'"
+              >
+                Photos
+              </button>
+              <button
+                class="virtualButton"
+                onclick="document.getElementById('id02').style.display='block'"
+              >
+                Virtual Tours
+              </button>
+              <button class="videosButton">Videos</button>
+            </div>
           </div>
+        </header>
 
-          <div class="viewContainer">
-            <h2>Campus Entrance</h2>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!4v1614991877351!6m8!1m7!1sD-qMu4ypTRZIQ6kv8JBcxA!2m2!1d43.47285321574392!2d-80.54397081274743!3f338.3618067037441!4f2.5575828830077256!5f0.7820865974627469"
-              class="frontView"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
-          </div>
-
-          <div class="viewContainer">
-            <h2>Restaurants</h2>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d4976.147926068796!2d-80.54890006322924!3d43.47242114567793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurants!5e0!3m2!1sen!2sca!4v1615580659550!5m2!1sen!2sca"
-              class="frontview"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
+        <div id="id01" class="w3-modal">
+          <div class="w3-animate-top uniPhotosContainer wrapper">
+            <header class="w3-container">
+              <span
+                onclick="document.getElementById('id01').style.display='none'"
+                class="w3-button w3-display-topright"
+                >&times;</span
+              >
+              <h2 class="w3-center">Photos</h2>
+            </header>
+            <div class="w3-container">
+              <div class="images">
+                <div>
+                  <img
+                    class="mySlides"
+                    src="./assets/images/1.jpeg"
+                    style="width: 100%"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    class="mySlides"
+                    src="./assets/images/2.jpeg"
+                    style="width: 100%"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    class="mySlides"
+                    src="./assets/images/3.jpeg"
+                    style="width: 100%"
+                    alt=""
+                  />
+                </div>
+                <button
+                  class="w3-button w3-black w3-display-left"
+                  onclick="plusDivs(-1)"
+                >
+                  &#10094;
+                </button>
+                <button
+                  class="w3-button w3-black w3-display-right"
+                  onclick="plusDivs(1)"
+                >
+                  &#10095;
+                </button>
+              </div>
+            </div>
           </div>
         </div>
+
+        <div id="id02" class="w3-modal">
+          <div class="w3-animate-top uniPhotosContainer wrapper">
+            <header class="w3-container">
+              <span
+                onclick="document.getElementById('id02').style.display='none'"
+                class="w3-button w3-display-topright"
+                >&times;</span
+              >
+              <h2 class="w3-center">Virtual Tours</h2>
+            </header>
+            <div class="w3-container">
+              <div class="virtual">
+                <div class="viewContainer">
+                  <h2>Basketball</h2>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!4v1614808303511!6m8!1m7!1sCAoSLEFGMVFpcFBEd3M5SVVuWWhpdDJEREpySUtDczhyakpmWXFEYVFZRllBOEJI!2m2!1d43.47227432720506!2d-80.5461348965764!3f151.41371457646085!4f-1.7037129660588874!5f0.7820865974627469"
+                    class="gymView"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                  ></iframe>
+                </div>
+
+                <div class="viewContainer">
+                  <h2>Math & Comp Lab</h2>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!4v1614991279181!6m8!1m7!1sCAoSLEFGMVFpcFAtS2E4Qjg5QUw0T25NdC15Wk91RFVsVVR1aG41MWEzMENjTVlq!2m2!1d43.4721517!2d-80.5439318!3f215.11301006043172!4f-2.8540554634752624!5f0.7820865974627469"
+                    class="mathCompView"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                  ></iframe>
+                </div>
+
+                <div class="viewContainer">
+                  <h2>Campus Entrance</h2>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!4v1614991877351!6m8!1m7!1sD-qMu4ypTRZIQ6kv8JBcxA!2m2!1d43.47285321574392!2d-80.54397081274743!3f338.3618067037441!4f2.5575828830077256!5f0.7820865974627469"
+                    class="frontView"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                  ></iframe>
+                </div>
+
+                <!-- <div class="viewContainer">
+                  <h2>Restaurants</h2>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d4976.147926068796!2d-80.54890006322924!3d43.47242114567793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurants!5e0!3m2!1sen!2sca!4v1615580659550!5m2!1sen!2sca"
+                    class="frontview"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                  ></iframe>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section>
+          <!-- <div class="imagesContainer">
+            <button class="closeImages">&times;</button>
+            <div class="images">
+              <div>
+                <img src="./assets/images/1.jpeg" alt="" />
+              </div>
+              <div>
+                <img src="./assets/images/2.jpeg" alt="" />
+              </div>
+              <div>
+                <img src="./assets/images/3.jpeg" alt="" />
+              </div>
+            </div>
+          </div> -->
+          <div class="virtualContainer">
+            <button class="closeVirtual">&times;</button>
+            <div class="virtual">
+              <div class="viewContainer">
+                <h2>Basketball</h2>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!4v1614808303511!6m8!1m7!1sCAoSLEFGMVFpcFBEd3M5SVVuWWhpdDJEREpySUtDczhyakpmWXFEYVFZRllBOEJI!2m2!1d43.47227432720506!2d-80.5461348965764!3f151.41371457646085!4f-1.7037129660588874!5f0.7820865974627469"
+                  class="gymView"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+
+              <div class="viewContainer">
+                <h2>Math & Comp Lab</h2>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!4v1614991279181!6m8!1m7!1sCAoSLEFGMVFpcFAtS2E4Qjg5QUw0T25NdC15Wk91RFVsVVR1aG41MWEzMENjTVlq!2m2!1d43.4721517!2d-80.5439318!3f215.11301006043172!4f-2.8540554634752624!5f0.7820865974627469"
+                  class="mathCompView"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+
+              <div class="viewContainer">
+                <h2>Campus Entrance</h2>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!4v1614991877351!6m8!1m7!1sD-qMu4ypTRZIQ6kv8JBcxA!2m2!1d43.47285321574392!2d-80.54397081274743!3f338.3618067037441!4f2.5575828830077256!5f0.7820865974627469"
+                  class="frontView"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+
+              <div class="viewContainer">
+                <h2>Restaurants</h2>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d4976.147926068796!2d-80.54890006322924!3d43.47242114567793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurants!5e0!3m2!1sen!2sca!4v1615580659550!5m2!1sen!2sca"
+                  class="frontview"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="exploreInfoContainer wrapper">
+          <div class="helpfulInfoContainer">
+            <div class="overview">
+              <h2>overview</h2>
+              <p>
+                The University of Waterloo is a public research university with
+                a main campus in Waterloo, Ontario, Canada. The main campus is
+                on 404 hectares (998 acres) of land adjacent to "Uptown"
+                Waterloo and Waterloo Park. The university also operates three
+                satellite campuses and four affiliated university colleges.
+              </p>
+            </div>
+            <div class="location">
+              <h2>location</h2>
+              <p>200 University Ave W, Waterloo, ON N2L 3G1, Canada</p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2895.440085581776!2d-80.54704628454637!3d43.47228537912792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf6ad02edccff%3A0xdd9df23996268e17!2sUniversity%20of%20Waterloo!5e0!3m2!1sen!2sca!4v1616009785769!5m2!1sen!2sca"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="admissions">
+              <h2>admissions</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="cost">
+              <h2>cost</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="academics">
+              <h2>academics</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="universityLife">
+              <h2>university life</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="membersContainer">
+            <div class="members">
+              <div class="title">
+                <h3>members</h3>
+                <a href="">View all >></a>
+              </div>
+            </div>
+            <div class="profilePics">
+              <div data-aos="fade-left" data-aos-duration="1000">X1</div>
+              <div data-aos="fade-left" data-aos-duration="2000">X2</div>
+              <div data-aos="fade-left" data-aos-duration="2500">X3</div>
+              <div data-aos="fade-left" data-aos-duration="1000">X4</div>
+              <div data-aos="fade-left" data-aos-duration="2000">X5</div>
+              <div data-aos="fade-left" data-aos-duration="2500">X6</div>
+              <div data-aos="fade-left" data-aos-duration="1000">X7</div>
+              <div data-aos="fade-left" data-aos-duration="2000">X8</div>
+              <div data-aos="fade-left" data-aos-duration="2500">X9</div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footerContainer wrapper">
+          <div class="footerLogoContainer">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              class="logoContainer"
+            >
+              <img
+                class="logo"
+                src="./assets/images/logo2.jpg"
+                alt="connectr logo"
+              />
+            </div>
+            <a class="footerSignUp" href="signUp.html">sign up / sign in</a>
+          </div>
+          <div class="footerLinksContainer">
+            <div class="footerLinks">
+              <div class="productContainer">
+                <h4>product</h4>
+                <ul>
+                  <li><a href="">about</a></li>
+                  <li>
+                    <a href=""
+                      >frequently asked questions <br />
+                      (FAQs)</a
+                    >
+                  </li>
+                  <li><a href="">colleges & universities</a></li>
+                  <li><a href="">partnerships</a></li>
+                </ul>
+              </div>
+              <div class="companyContainer">
+                <h4>company</h4>
+                <ul>
+                  <li><a href="">careers</a></li>
+                  <li><a href="">privacy policy</a></li>
+                  <li><a href="">Terms of Service</a></li>
+                </ul>
+              </div>
+              <div class="socialContainer">
+                <h4>social</h4>
+                <ul>
+                  <li><a href="">instagram</a></li>
+                  <li><a href="">twitter</a></li>
+                  <li><a href="">linkedIn</a></li>
+                  <li><a href="">tikTok</a></li>
+                </ul>
+              </div>
+              <div class="contactUsContainer">
+                <h4>contact us</h4>
+                <ul>
+                  <li><a href="">email us</a></li>
+                  <li><a href="">feedback form</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="trademarkContainer">
+            <p>© 2021 ConnectR</p>
+          </div>
+        </footer>
       </div>
-    </section>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./scripts/aos.js"></script>

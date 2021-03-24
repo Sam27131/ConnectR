@@ -268,7 +268,7 @@ body {
   line-height: 1.5;
 }
 
-.profilePage {
+.profileCreationPage {
   display: flex;
 }
 
@@ -276,89 +276,98 @@ body {
 
 /* userProfile.html Styles */
 
-/* Nav Styles */
-
-.navContainer {
-  padding: 15px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0 4px 2px -2px gray;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#search {
-  padding: 10px 450px 10px 10px;
-  background-color: lightgray;
-}
-
-.content {
-  width: 100%;
-  border-bottom: 2px solid black;
-}
-
-.userProfileLogoContainer {
-  float: left;
-  display: flex;
-  flex-direction: column;
-  border-right: 1px solid black;
+.userProfileHeaderContainer {
+  padding: 100px 200px;
   border-bottom: 1px solid black;
-  padding: 0 20px;
 }
 
-.logo {
-  width: 25px;
+.userProfileHeaderContainer h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.avatarContainer {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.avatarContainer img {
+  width: 55px;
+  height: 55px;
+  margin: 10px 10px 10px 0;
+}
+
+.avatarContainer button,
+.changePsw button {
+  text-transform: capitalize;
+  padding: 10px;
+  background-color: white;
+  color: #ee1d52;
+}
+
+.avatarContainer button {
+  margin: 0 50px;
+}
+
+.changePsw button {
+  margin: 20px 0;
+}
+
+/* Form Styles */
+
+.userProfileHeaderContainer label {
+  text-transform: capitalize;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.userProfileHeaderContainer input {
   height: 50px;
-  margin: 20px 20px 150px 20px;
 }
 
-.logo:hover {
-  transform: scale(1.1);
-  transition: all 0.2s ease-in-out;
+.name {
+  display: flex;
 }
 
-.logoIcons {
+.fnameContainer,
+.lnameContainer {
+  width: 50%;
+}
+
+.fnameContainer {
+  margin-right: 10px;
+}
+
+.lnameContainer {
+  margin-left: 10px;
+}
+
+.fnameContainer,
+.lnameContainer,
+.currentSchool,
+.bio,
+.email,
+.linkedin,
+.twitter,
+.instagram {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid black;
+  padding: 20px 0;
 }
 
-.icons {
-  display: flex;
+.socialProfileContainer {
+  margin: 100px 0;
 }
 
-.icons img,
-.logoIcons img {
-  width: 35px;
-  height: 35px;
-  margin: 20px;
+.socialProfileContainer h2 {
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 
-/* Community Styles */
-
-.communityContainer {
-  border-bottom: 1px solid black;
-}
-
-.community {
-  padding: 100px 200px 500px 200px;
-  text-align: center;
-}
-
-.community p {
-  padding: 50px 0;
-}
-
-#email {
-  padding: 20px 400px 20px 20px;
-}
-
-.slackLink a {
+.saveChanges button {
   margin: 20px 0;
   padding: 20px 50px;
   border: none;
