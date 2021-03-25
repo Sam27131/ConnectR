@@ -419,6 +419,10 @@ iframe {
   margin-bottom: 25px;
 }
 
+.location p {
+  margin-bottom: 25px;
+}
+
 .overview,
 .location,
 .admissions,
@@ -429,13 +433,27 @@ iframe {
   border-bottom: 1px solid black;
 }
 
+.admissions li,
+.cost li {
+  padding: 5px 0;
+}
+
+.admissions a,
+.cost a {
+  color: dodgerblue;
+}
+
+.admissions a:hover,
+.cost a:hover {
+  color: #ee1d52;
+  transition: all 0.2s ease-in-out;
+}
+
 .universityLife {
   border-bottom: none;
 }
 
-.location p {
-  margin-bottom: 25px;
-}
+/* Current Students Styles */
 
 .membersContainer {
   width: 40%;
