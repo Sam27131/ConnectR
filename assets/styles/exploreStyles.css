@@ -400,22 +400,6 @@ iframe {
   transition: all 0.2s linear;
 }
 
-/* .overlay {
-  position: fixed;
-  opacity: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  pointer-events: none;
-}
-
-.overlay.active {
-  opacity: 1;
-  pointer-events: all;
-} */
-
 /* Explore Info Styles */
 
 .exploreInfoContainer {
@@ -483,18 +467,32 @@ iframe {
 }
 
 .profilePics {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 50px 25px;
 }
 
-.profilePics div {
-  font-size: 4rem;
-  background-color: lightskyblue;
-  border-radius: 50%;
-  margin: 10px;
+.currentStudents {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: calc((100% / 3) - 20px);
-  height: 150px;
+}
+
+.currentStudents img {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+}
+
+.currentStudents img:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.currentStudents p {
+  text-transform: capitalize;
+  font-size: 2rem;
 }

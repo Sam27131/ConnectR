@@ -57,4 +57,17 @@
   width: 35px;
   height: 35px;
   margin: 20px;
+  cursor: pointer;
+}
+
+.logoIcons .grad {
+  width: 48px;
+  height: 48px;
+  margin: 13px 15px;
+}
+
+.icons img:hover,
+.logoIcons a:hover {
+  transform: scale(1.1);
+  transition: all 0.25s ease-in-out;
 }

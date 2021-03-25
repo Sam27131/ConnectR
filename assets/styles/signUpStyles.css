@@ -296,39 +296,87 @@ body {
   font-weight: bold;
 }
 
-.linksContainer {
-  float: right;
-  display: flex;
-}
-
-.linksContainer a,
-.uniLink {
-  padding: 10px;
-  font-size: 2rem;
-  text-transform: capitalize;
-  color: black;
-}
-
-.linksContainer a:hover {
-  color: blue;
-  transition: all 0.3s ease-in-out;
-}
-
-.signUp,
-.uniLink {
-  padding: 10px;
-  border: 2px solid black;
-}
-
-.signUp:hover,
-.uniLink:hover {
-  border: 2px solid blue;
-  transition: all 0.3s ease-in-out;
-}
-
 /* Form Styles */
 
+.backgroundLogo1,
+.backgroundLogo2,
+.backgroundLogo3,
+.backgroundLogo4,
+.backgroundLogo5,
+.backgroundLogo6,
+.backgroundLogo7,
+.backgroundLogo8,
+.backgroundLogo9 {
+  width: 32px;
+  height: 46px;
+  position: absolute;
+}
+
+.backgroundLogo1 {
+  left: 15.56%;
+  right: 82.22%;
+  top: 29.49%;
+  bottom: 66.01%;
+}
+
+.backgroundLogo2 {
+  left: 1.74%;
+  right: 96.04%;
+  top: 52.34%;
+  bottom: 43.16%;
+}
+
+.backgroundLogo3 {
+  left: 21.74%;
+  right: 76.04%;
+  top: 66.02%;
+  bottom: 29.49%;
+}
+
+.backgroundLogo4 {
+  left: 10.97%;
+  right: 86.81%;
+  top: 87.79%;
+  bottom: 7.71%;
+}
+
+.backgroundLogo5 {
+  left: 71.39%;
+  right: 26.39%;
+  top: 14.06%;
+  bottom: 81.44%;
+}
+
+.backgroundLogo6 {
+  left: 94.31%;
+  right: 3.47%;
+  top: 6.35%;
+  bottom: 89.15%;
+}
+
+.backgroundLogo7 {
+  left: 83.12%;
+  right: 14.65%;
+  top: 56.84%;
+  bottom: 38.67%;
+}
+
+.backgroundLogo8 {
+  left: 96.53%;
+  right: 1.25%;
+  top: 69.63%;
+  bottom: 25.87%;
+}
+
+.backgroundLogo9 {
+  left: 76.88%;
+  right: 20.9%;
+  top: 88.18%;
+  bottom: 7.32%;
+}
+
 .signUpHeaderContainer {
+  position: relative;
   margin-top: 150px;
   clear: both;
 }
@@ -338,6 +386,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.signUpMessage h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.signUpMessage p {
+  padding: 5px 0;
 }
 
 .createAccount,
@@ -383,4 +441,11 @@ body {
   width: 200px;
   height: 200px;
   color: #000;
+}
+
+/* Footer Styles */
+
+footer p {
+  text-align: center;
+  padding: 25px;
 }

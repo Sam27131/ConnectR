@@ -268,38 +268,90 @@ body {
   line-height: 1.5;
 }
 
-.communityPage {
+.currentStudentPage {
   display: flex;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 
-/* community.html Styles */
+/* currentStudentProfile.html Styles */
 
-/* Community Styles */
+/* Current Student Profile Styles */
 
-.communityContainer {
+.currentStudentMainContainer {
   border-bottom: 1px solid black;
 }
 
-.community {
-  padding: 100px 200px 500px 200px;
-  text-align: center;
+.currentStudentChildContainer {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.community p {
+.currentStudentChildContainer div {
+  width: 70%;
+}
+
+.studentInfoContainer {
+  display: flex;
+  justify-content: left;
+  padding-bottom: 75px;
+  border-bottom: 1px solid black;
+}
+
+.studentInfoContainer img {
+  width: 120px;
+  height: 120px;
+}
+
+.studentInfo {
+  padding: 0 50px;
+}
+
+.studentInfo h1 {
+  text-transform: capitalize;
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.studentInfo p {
+  padding: 10px 0;
+}
+
+.aboutContainer h2,
+.interestsContainer h2 {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.aboutContainer h2 {
+  padding-top: 50px;
+}
+
+.aboutContainer p {
   padding: 50px 0;
 }
 
-#email {
-  padding: 20px 400px 20px 20px;
+.interestsContainer h2 {
+  padding-bottom: 50px;
 }
 
-.slackLink a {
-  margin: 20px 0;
-  padding: 20px 50px;
-  border: none;
-  background-color: #ee1d52;
-  color: white;
-  text-transform: capitalize;
+.studentInterests {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 10px;
+}
+
+.studentInterests p {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 25px;
+  width: fit-content;
+}
+
+.studentInterests p:nth-child(3) {
+  margin-left: 15px;
 }
