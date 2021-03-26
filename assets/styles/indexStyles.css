@@ -583,6 +583,12 @@ body {
 
 .playButton img {
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.playButton img:hover {
+  transform: scale(1.1);
+  transition: all 0.2s linear;
 }
 
 /* Media Queries */
